@@ -1,0 +1,125 @@
+"PanTilt"   : Điều khiển CAMERA xoay Up/Down/Left/Right
+"Playlist"  : Lấy danh sách các SD files đã record
+"Playback"  : Chỉ định Playback SD file đã record
+"DownloadS3": Yêu cầu download SD files thông qua S3 Server
+ __________________________________________________________________________
+|
+| Pan & Tilt dùng Datachannel WebRTC
+|__________________________________________________________________________
+* Request from CLIENT to CAMERA
+{
+    "Id": "CAM-01",
+    "Command": "PanTilt",
+    "TypeCommand": "Request",
+    "Content": {
+        "Direction": "Up/Down/Left/Right"
+    }
+}
+
+* Respond from CAMERA to CLIENT
+{
+    "Id": "CAM-01",
+    "Command": "PanTilt",
+    "TypeCommand": "Respond",
+    "Content": {
+        "Success": true/false
+    }
+}
+ __________________________________________________________________________
+|
+| Lấy danh sách các SD files đã record (Video - Audio - Thumbnail)
+|__________________________________________________________________________
+* Request from CLIENT to CAMERA
+{
+    "Id": "CAM-01",
+    "Command": "Playlist",
+    "TypeCommand": "Request",
+    "Content": {
+        "Datetime": {
+            "Year": 2023,
+            "Month": 11,
+            "Date": 19
+        }
+    }
+}
+
+* Respond from CAMERA to CLIENT
+{
+    "Id": "CAM-01",
+    "Command": "Playlist",
+    "TypeCommand": "Respond",
+    "Content": {
+        "Total": 1,
+        "Playlists": [
+            {
+                "OrderNumber": 0,
+                "Type": 0/1,
+                "FileName": "20231119070000_1700377200_1700377500",
+                "DurationInSecs": 300,
+                "BeginTime": "2023.11.19 07:00:00",
+                "EndTime": "2023.11.19 07:05:00"
+            }
+        ]
+    }
+}
+
+ __________________________________________________________________________
+|
+| Chỉ định Playback SD file đã record
+|__________________________________________________________________________
+* Request from CLIENT to CAMERA
+{
+    "Id": "CAM-01",
+    "Command": "Playback",
+    "TypeCommand": "Request",
+    "Content": {
+        "FileName": "20231119070000_1700377200_1700377500",  
+        "EndTime": "2023.11.24 13:05:28", 
+        "BeginTime": "2023.11.24 13:00:28",
+        "Status": "Play/Pause/Resume/Stop/Seek",
+        "SeekPos": 0
+    }
+}
+
+* Respond from CAMERA to CLIENT
+{
+    "Id": "CAM-01",
+    "Command": "Playback",
+    "TypeCommand": "Respond",
+    "Content": {
+        "FileName": "20231119070000_1700377200_1700377500",
+        "EndTime": "", 
+        "BeginTime": "",
+        "SeekPos": 0,
+        "PlayStatus": 0
+    }
+}
+Rule PlayStatus
+    0: Start play error
+    1: Startplaying/Playing success
+    2: Pause
+    3: Resume
+    4: Play ending
+    5: Stop
+
+ __________________________________________________________________________
+|
+| Yêu cầu download SD files
+|__________________________________________________________________________
+{
+    "Id": "CAM-01",
+    "Command": "Download",
+    "TypeCommand": "Request",
+    "Content": {
+        "FileName": "20231119070000_1700377200_1700377500"
+    }
+}
+
+{
+    "Id": "CAM-01",
+    "Command": "Download",
+    "TypeCommand": "Respond",
+    "Content": {
+        "FileName": "20231119070000_1700377200_1700377500"
+    }
+}

@@ -1,0 +1,175 @@
+Performing C SOURCE FILE Test have_sa_len failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9ddc3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ddc3.dir/build.make CMakeFiles/cmTC_9ddc3.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ddc3.dir/src.c.o
+/usr/bin/cc -Dhave_sa_len -I/home/it/Desktop/data_channel/libdatachannel/deps/usrsctp/usrsctplib -fPIE -o CMakeFiles/cmTC_9ddc3.dir/src.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c:7:38: error: ‘struct sockaddr’ has no member named ‘sa_len’
+    7 |   (void)sizeof(((struct sockaddr *)0)->sa_len);
+      |                                      ^~
+gmake[1]: *** [CMakeFiles/cmTC_9ddc3.dir/build.make:78: CMakeFiles/cmTC_9ddc3.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9ddc3/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/socket.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr *)0)->sa_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test have_sin_len failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e449d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e449d.dir/build.make CMakeFiles/cmTC_e449d.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e449d.dir/src.c.o
+/usr/bin/cc -Dhave_sin_len -I/home/it/Desktop/data_channel/libdatachannel/deps/usrsctp/usrsctplib -fPIE -o CMakeFiles/cmTC_e449d.dir/src.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c:7:41: error: ‘struct sockaddr_in’ has no member named ‘sin_len’
+    7 |   (void)sizeof(((struct sockaddr_in *)0)->sin_len);
+      |                                         ^~
+gmake[1]: *** [CMakeFiles/cmTC_e449d.dir/build.make:78: CMakeFiles/cmTC_e449d.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_e449d/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <netinet/in.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in *)0)->sin_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test have_sin6_len failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aadbb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aadbb.dir/build.make CMakeFiles/cmTC_aadbb.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aadbb.dir/src.c.o
+/usr/bin/cc -Dhave_sin6_len -I/home/it/Desktop/data_channel/libdatachannel/deps/usrsctp/usrsctplib -fPIE -o CMakeFiles/cmTC_aadbb.dir/src.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c:7:42: error: ‘struct sockaddr_in6’ has no member named ‘sin6_len’
+    7 |   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+      |                                          ^~
+gmake[1]: *** [CMakeFiles/cmTC_aadbb.dir/build.make:78: CMakeFiles/cmTC_aadbb.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_aadbb/fast] Error 2
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <netinet/in.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test have_sconn_len failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8b7e1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8b7e1.dir/build.make CMakeFiles/cmTC_8b7e1.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b7e1.dir/src.c.o
+/usr/bin/cc -Dhave_sconn_len -I/home/it/Desktop/data_channel/libdatachannel/deps/usrsctp/usrsctplib -fPIE -o CMakeFiles/cmTC_8b7e1.dir/src.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/src.c:6:43: error: ‘struct sockaddr_conn’ has no member named ‘sconn_len’
+    6 |   (void)sizeof(((struct sockaddr_conn *)0)->sconn_len);
+      |                                           ^~
+gmake[1]: *** [CMakeFiles/cmTC_8b7e1.dir/build.make:78: CMakeFiles/cmTC_8b7e1.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8b7e1/fast] Error 2
+
+
+Source file was:
+
+#include <usrsctp.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_conn *)0)->sconn_len);
+  return 0;
+}
+
+Determining if the include file machine/types.h exists failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_41c53/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_41c53.dir/build.make CMakeFiles/cmTC_41c53.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41c53.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_41c53.dir/CheckIncludeFile.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: machine/types.h: No such file or directory
+    1 | #include <machine/types.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_41c53.dir/build.make:78: CMakeFiles/cmTC_41c53.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_41c53/fast] Error 2
+
+
+
+Determining if the include file sys/int_types.h exists failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6244a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6244a.dir/build.make CMakeFiles/cmTC_6244a.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6244a.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_6244a.dir/CheckIncludeFile.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/int_types.h: No such file or directory
+    1 | #include <sys/int_types.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_6244a.dir/build.make:78: CMakeFiles/cmTC_6244a.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_6244a/fast] Error 2
+
+
+
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2cea1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2cea1.dir/build.make CMakeFiles/cmTC_2cea1.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cea1.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_2cea1.dir/CheckIncludeFile.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: windows.h: No such file or directory
+    1 | #include <windows.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_2cea1.dir/build.make:78: CMakeFiles/cmTC_2cea1.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2cea1/fast] Error 2
+
+
+
+Determining if the include file winsock2.h exists failed with the following output:
+Change Dir: /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_14e0d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14e0d.dir/build.make CMakeFiles/cmTC_14e0d.dir/build
+gmake[1]: Entering directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14e0d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_14e0d.dir/CheckIncludeFile.c.o -c /home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: winsock2.h: No such file or directory
+    1 | #include <winsock2.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_14e0d.dir/build.make:78: CMakeFiles/cmTC_14e0d.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/it/Desktop/data_channel/libdatachannel/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_14e0d/fast] Error 2
+
+
+

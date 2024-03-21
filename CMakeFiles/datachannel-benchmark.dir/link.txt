@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/datachannel-benchmark.dir/test/benchmark.cpp.o -o benchmark-0.19.4  -Wl,-rpath,/home/it/Desktop/data_channel/Camera_project_1st/libdatachannel libdatachannel.so.0.19.4 

@@ -1,0 +1,123 @@
+{
+    "files.associations": {
+<<<<<<< HEAD
+=======
+        "stdexcept": "cpp",
+        "string": "cpp",
+        "iostream": "cpp",
+        "any": "cpp",
+>>>>>>> origin/master
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+<<<<<<< HEAD
+=======
+        "bitset": "cpp",
+>>>>>>> origin/master
+        "cctype": "cpp",
+        "chrono": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "codecvt": "cpp",
+<<<<<<< HEAD
+        "compare": "cpp",
+        "concepts": "cpp",
+=======
+>>>>>>> origin/master
+        "condition_variable": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+<<<<<<< HEAD
+        "string": "cpp",
+        "unordered_map": "cpp",
+=======
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+>>>>>>> origin/master
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "ratio": "cpp",
+<<<<<<< HEAD
+=======
+        "regex": "cpp",
+>>>>>>> origin/master
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "fstream": "cpp",
+        "future": "cpp",
+        "initializer_list": "cpp",
+        "iomanip": "cpp",
+        "iosfwd": "cpp",
+<<<<<<< HEAD
+        "iostream": "cpp",
+=======
+>>>>>>> origin/master
+        "istream": "cpp",
+        "limits": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+<<<<<<< HEAD
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "semaphore": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "stop_token": "cpp",
+=======
+        "ostream": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+>>>>>>> origin/master
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "cinttypes": "cpp",
+        "typeinfo": "cpp",
+        "valarray": "cpp",
+<<<<<<< HEAD
+        "any": "cpp",
+        "bitset": "cpp",
+        "unordered_set": "cpp",
+        "regex": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "variant": "cpp"
+=======
+        "variant": "cpp",
+        "format": "cpp",
+        "ranges": "cpp",
+        "charconv": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "numbers": "cpp",
+        "span": "cpp",
+        "stop_token": "cpp",
+        "semaphore": "cpp"
+>>>>>>> origin/master
+    }
+}
