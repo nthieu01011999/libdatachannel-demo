@@ -364,7 +364,8 @@ shared_ptr<Stream> createStream(const string h264Samples, const unsigned fps, co
     auto video = make_shared<H264FileParser>(h264Samples, fps, true); // 33333us
     // audio source
     auto audio = make_shared<OPUSFileParser>(opusSamples, true);
-
+    
+    // ket hop hai luong
     auto stream = make_shared<Stream>(video, audio);
     // set callback responsible for sample sending
     stream->onSample([ws = make_weak_ptr(stream)](Stream::StreamSourceType type, uint64_t sampleTime, rtc::binary sample) {
@@ -445,7 +446,7 @@ void startStream() {
         stream = createStream(h264SamplesDirectory, USER_FPS, opusSamplesDirectory);
         avStream = stream;
     }
-    stream->start();
+    stream->start(); //thread run or not, not start();
 }
 
 /// Send previous key frame so browser can show something to user
